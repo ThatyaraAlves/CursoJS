@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Inicial</title>
+    <style>
+        body{
+            background-color: rgb(132, 132, 196);
+            color: white;
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+<script>
+    
+    function mostra(frase){
+
+        document.write("<br>")
+        document.write(frase)
+        document.write("<br>")
+    }
+    
+    var nome = window.prompt('Digite seu nome: ')
+    var idade = Number(window.prompt('Qual a sua idade?'))
+    mostra(`Olá <strong>${nome}</strong>, muito prazer, você tem ${idade} anos, portanto você nasceu em 1998`)
+
+    //agora em MAIUSCULO:
+   
+
+    mostra(`Olá <strong>${nome.toUpperCase()}</strong>, muito prazer, você tem ${idade} anos, portanto você nasceu em 1998`)
+    // minuscula de novo
+    mostra(`Olá <strong>${nome.toLowerCase()}</strong>, muito prazer, você tem ${idade} anos, portanto você nasceu em 1998`)
+
+    //Formatando números
+
+    var n1 = 15.6;
+    n1.toFixed(2) // define quantas casas decimais
+
+    n1.toFixed(2).replace('.',',') // substitiu o ponto pela vírgula
+
+    n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) // transforma os valores em formas monetárias
+
+    mostra(`O valor de ${n1} em reais é de ${n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}`)
+
+
+    // Operadores e precedencia
+
+    //ternario
+    var media = 8.2;
+    media > 7 ? "APROVADO" :"REPROVADO";
+
+    media >=8 ? media++ : media;
+
+    mostra(media);
+
+
+
+    
+
+    
+
+    
+</script>
+</body>
+</html>
