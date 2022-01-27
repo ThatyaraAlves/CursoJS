@@ -8,21 +8,29 @@
 </head>
 <body>
     <h1>Iniciando estudos com o DOM</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque odit officia maiores sapiente 
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <strong>DOM</strong> Cumque odit officia maiores sapiente 
         adipisci quia quibusdam doloribus fuga voluptatem veritatis et, ullam tempora veniam dolore iusto 
         voluptate iure nulla magni!</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequuntur sapiente iusto, 
             deleniti ratione cupiditate illo voluptatum nostrum sequi dicta. Maiores laudantium veritatis, 
             quae facilis tenetur dolorum quo vel atque?</p>
-    <div>Clique aqui</div>
+    <div id="msg">Clique aqui</div>
+    <div name="nome" >Alguma coisa bla bla</div>
     <script>
         // getElementsbyTagName:
-        document.getElementsByTagName('p')[0] // se existem duas tags indicamos a partir da ordem com que elas estão dispostas
+        var p1 = document.getElementsByTagName('p')[0] // se existem duas tags indicamos a partir da ordem com que elas estão dispostas
+        
         
         //innerText:
         document.write('Está escrito assim: ' + p1.innerText)
-    
-    
+
+        document.write('Está escrito assim: ' + p1.innerHTML)
+         // getElementById
+       var d = document.getElementById('msg')
+       d.innerText = 'Estou aguardando...'
+
+       // getElementsByName
+        var dd = document.getElementsByName('nome')[0]
     </script>
         
 </body>
