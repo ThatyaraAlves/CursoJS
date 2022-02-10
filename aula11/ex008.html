@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        button{
+            padding: 10px;
+            margin-top: 20px;
+        }
+        input{
+            font-size: 1em;
+        }
+        div{
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" name="vel" id="vel">
+    <div id="res"></div>
+    <button type="submit" id="ver">Verificar</button>
+    <script>
+       
+            var verifica = document.getElementById('ver')
+            verifica.addEventListener('click', clicar)
+        
+        function clicar(){
+            var vel = document.getElementById('vel')
+            var velocidade = Number(vel.value)
+            var resultado = document.querySelector('div#res')
+            resultado.innerHTML = (`Você está na velocidade de ${velocidade}km/h`)
+            if (velocidade > 60){
+                resultado.innerHTML += '<p>Você está acima do limite de velocidade permitido,<strong> MULTADO!</strong></p>'
+            }
+            resultado.innerHTML += '<p>Dirija sempre com cuidado</p>'
+
+        }
+
+    </script>
+</body>
+</html>

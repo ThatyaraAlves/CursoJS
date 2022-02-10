@@ -19,7 +19,7 @@
     <script>
         // getElementsbyTagName:
         var p1 = document.getElementsByTagName('p')[0] // se existem duas tags indicamos a partir da ordem com que elas estão dispostas
-        
+        document.write(p1.innerText)
         
         //innerText:
         document.write('Está escrito assim: ' + p1.innerText)
@@ -31,6 +31,12 @@
 
        // getElementsByName
         var dd = document.getElementsByName('nome')[0]
+
+
+        // querySelector
+
+        var seletor = document.querySelector('div#msg');
+        seletor.style.color = 'red'
     </script>
         
 </body>

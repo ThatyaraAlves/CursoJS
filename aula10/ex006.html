@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background-color: cornflowerblue;
+            width: 200px;
+            height: 200px;
+            color: azure;
+            font-weight: bold;
+            font-size: 2em;
+            text-align: center;
+            line-height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- primeir forma de chamar os eventos: pelo HTML -->
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">Interaja...</div>
+
+    <script>
+        var clique = document.getElementById('area')
+       // segunda forma de chamar os eventos: pelo javascript
+       clique.addEventListener('click', clicar)
+       clique.addEventListener('mouseenter', entrar)
+       clique.addEventListener('mouseout', sair)
+       
+       
+        function clicar(){
+            
+            clique.innerText = 'Cliquei'
+            clique.style.color = 'black'
+            clique.style.background = 'lightgray'
+        }
+        function entrar(){
+            clique.innerText = 'Entrei'
+            clique.style.color = 'white'
+            clique.style.background = 'pink'
+            
+        }
+        function sair(){
+            clique.innerText = 'Sai'
+            clique.style.color = 'red'
+            clique.style.background = 'green'
+        }
+
+    </script>
+</body>
+</html>
