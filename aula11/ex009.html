@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País - nacionalidade</title>
+</head>
+<body>
+    <input type="text" name="pais" id="pais">
+    <button type="submit" id="ver">Verificar nacionalidade</button>
+    <div id="res"></div>
+    <script>
+       
+        var verifica = document.getElementById('ver')
+        verifica.addEventListener('click', clicar)
+    
+    function clicar(){
+        var vel = document.getElementById('vel')
+        var p = document.getElementById('pais')
+        var pais = p.value
+        var resultado = document.querySelector('div#res')
+        
+        if (pais == 'Brasil'){
+            resultado.innerHTML = '<p>Brasileiro(a)</p>'
+        }
+        else{
+            resultado.innerHTML += '<p>Estrangeiro(a)</p>'
+        }
+    }
+
+</script>
+    
+</body>
+</html>
