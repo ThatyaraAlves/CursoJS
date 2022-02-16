@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Modelo idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Ano de nascimento:
+                <input type="number" name="ano" id="ano" min="0">
+
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sexo" id="masc" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="sexo" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p><button type="submit" onclick="verificar()">Verificar</button></p>
+        </div>
+        <div id="res">
+           <p>Preencha os campos acima para ver o resultado!! </p>
+        </div>
+    </section>
+    <footer>
+        <p> &copy; Thatyara Alves</p>
+    </footer>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
