@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(233, 201, 236);
+
+}
+
+header{
+    margin: auto;
+    text-align: center;
+    color: rgb(114, 152, 167);
+
+}
+section{
+    margin: auto;
+    padding: 10px;
+
+    background-color: aliceblue;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.226);
+    border-radius: 8px;
+    width: 30%;
+}
+div{
+    font-weight: bold;
+    padding: 10px;
+    margin: -10px 0px 0px 0px;
+}
+footer{
+    margin: auto;
+    text-align: center;
+    color: rgb(114, 152, 167);
+
+}
+select{
+    color: rgb(73, 110, 124);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold
+}
