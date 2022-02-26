@@ -21,17 +21,28 @@ function contar(){
         ehPossivel = true
     }
     // etapa de contagem
-    // tentei fazer com while e não funcionou nao sei pq
-     if(ehPossivel){
-        res.innerHTML = 'Contando'
+    //contagem crescente
+     if(ehPossivel && inicio < fim){
+        res.innerHTML = 'Contando... '
          let contador = inicio
          while(contador <= fim){
             
-            res.innerHTML += `&#x27A1 ${contador}` 
+            res.innerHTML += `${contador} &#x27A1` 
             contador += passo
          }
- //acabou funcionando eu só tinha colocado  res.innerHTML errado
+        
          }
+         // contando de trás pra frente
+    else{
+        res.innerHTML = 'Contando... '
+        let contador = inicio
+         while(contador >= fim){
+            
+            res.innerHTML += `${contador} &#x27A1` 
+            contador -= passo
+         }
+    }
+         res.innerHTML += ' &#x1F3C1'
          
      
 }

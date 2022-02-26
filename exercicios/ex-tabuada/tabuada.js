@@ -7,7 +7,6 @@ function calcular(){
     
     
     if (num == ''){
-        
         alert('Digite um número para que possamos calcular')
     }
     else{
